@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+.logoImage {
+    width: 50px;
+    height: 50px;
+}
+.logoImage>img {
+    display: block;
+    width: 100%;
+}
+nav>ul {
+    display: flex;
+}
+nav>ul>li {
+    list-style-type: none;
+}
+nav>ul>li>a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1em;
+}
+nav>ul>li>a:hover {
+    font-weight: bold;
+}
+.rightsParaf {
+    font-size: 0.8em;
+}
