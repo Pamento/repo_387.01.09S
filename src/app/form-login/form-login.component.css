@@ -1,0 +1,13 @@
+.logBox {
+  width: 60%;
+  padding: 2.5em;
+  margin: auto;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+.loginForm > * {
+  width: 100%;
+}
+  

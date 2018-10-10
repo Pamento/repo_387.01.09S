@@ -1,0 +1,13 @@
+.signBox {
+  width: 40%;
+  padding: 2.5em;
+  margin: auto;
+}
+.signinForm {
+  display: flex;
+  flex-direction: column;
+}
+.signinForm > * {
+  width: 100%;
+}
+  

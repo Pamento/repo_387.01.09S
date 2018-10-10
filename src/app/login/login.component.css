@@ -1,0 +1,6 @@
+.btnsLog {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 3em auto;
+}

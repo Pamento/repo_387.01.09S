@@ -1,0 +1,17 @@
+<section class="signBox" >
+  <form class="signinForm" [formGroup]="formSignup" method="post">
+      <mat-form-field>
+        <input matInput type="text" placeholder="your name" formControlName="userName" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="email" placeholder="your@email.com" formControlName="email" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="password" formControlName="password" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="confirm password" formControlName="confirm">
+      </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submit()" >Sign up</button>
+  </form>
+</section>

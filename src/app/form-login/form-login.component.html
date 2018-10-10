@@ -1,0 +1,11 @@
+<section class="logBox" >
+  <form class="loginForm" [formGroup]="formLogin" method="post">
+    <mat-form-field>
+      <input matInput type="email" placeholder="your@email.com" formControlName="email" >
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" placeholder="password" formControlName="password" >
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submit()" >Login</button>
+  </form>
+</section>
