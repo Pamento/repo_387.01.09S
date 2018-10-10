@@ -1,19 +1,23 @@
 /*
 Some style come from global styleSheets file. styles.css like .sheetArticle class.
 */
-.teacherPage {
-    width: 100%;
-    height: 100%;
-    background-image: url('../../assets/images/La-fete-du-pain-2.jpg');
+.mainSection {
+    background-image: url('/src/assets/images/La-fete-du-pain-2.jpg');
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* .teacherPage {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    flex-direction: column;
+    margin-bottom: 3em;
+} */
 .fontFamily {
     font-family: 'American Typewriter', serif;
-}
-.aLink {
-    align-self: flex-start;
 }

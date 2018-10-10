@@ -5,10 +5,25 @@ body, html {
     margin: 0;
     padding: 0;
 }
-.sheetArticle {
+body {
+    background-color: #ff944d;
+    position: relative;
+}
+.glContainerPage {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+.glBodyPage {
+    overflow: scroll;
+}
+.glSheetArticle {
     width: 70%;
-    height: 60%;
+    /* height: 60%; */
     background-color: rgba(245, 245, 220, 0.7);
-    margin: auto;
+    border-radius: 2px;
+    box-shadow: 3px 3px 4px solid #fce3e3;
+    margin: 0 auto 2.5em;
     padding: 2em;
 }
