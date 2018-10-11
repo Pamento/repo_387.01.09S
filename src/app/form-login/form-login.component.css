@@ -1,5 +1,7 @@
 .logBox {
-  width: 60%;
+  background-color: rgb(242, 239, 239);
+  box-shadow: 4px 4px 6px;
+  width: 40%;
   padding: 2.5em;
   margin: auto;
 }

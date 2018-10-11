@@ -8,11 +8,14 @@
 main {
     width: 70%;
     height: 70%;
-    background-image: url('/src/assets/images/learn-french-naturally-by-skype-white-v2.png');
+    background-image: url('/src/assets/images/d14e2f47ca30c6a5c886f7ad32cfe1ed.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 5% auto;
+    -ms-transform: skewY(-10deg); /* IE 9 */
+    -webkit-transform: skewY(-10deg); /* Safari 3-8 */
+    transform: skewY(-10deg);
 }
 .mainSlogan {
     color: #ffffff;
