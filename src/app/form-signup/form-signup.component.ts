@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 })
 export class FormSignupComponent implements OnInit {
 
+  hide: any;
   formSignup: FormGroup;
   constructor(private fb: FormBuilder) { }
 

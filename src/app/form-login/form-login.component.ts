@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 export class FormLoginComponent implements OnInit {
 
   formLogin: FormGroup;
+  hide: any;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {

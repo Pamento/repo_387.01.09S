@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-body, html {
+/* @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 *//*
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+} */
+
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -20,10 +32,9 @@ body {
 }
 .glSheetArticle {
     width: 70%;
-    /* height: 60%; */
     background-color: rgba(245, 245, 220, 0.7);
     border-radius: 2px;
-    box-shadow: 3px 3px 4px solid #fce3e3;
+    box-shadow: 3px 3px 4px #020202;
     margin: 0 auto 2.5em;
     padding: 2em;
 }

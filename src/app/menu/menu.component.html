@@ -3,10 +3,22 @@
     <ul>
       <li><a routerLink="/">Home</a> | </li>
       <li><a routerLink="/aboutteacher">About teacher</a> | </li>
-      <li><a routerLink="/frenchCourses">French courses</a> | </li>
+      <li class="secondLevelUp" ><a routerLink="/frenchCourses">French courses</a> | 
+        <ul class="secondLevel" >
+          <li><a routerLink="/frenchCourses/#howorks">How ts's works</a></li>
+          <li><a routerLink="/frenchCourses/#fees">Fees</a></li>
+          <li><a routerLink="/frenchCourses/#term">Term & Conditions</a></li>
+          <li><a routerLink="/frenchCourses">Exiercise</a></li>
+          <li><a routerLink="/frenchCourses">Calendar of lessons</a></li>
+        </ul>
+      </li>
       <li><a routerLink="/blog">Blog</a> | </li>
-      <li><a routerLink="/more">More</a> | </li>
-      <li><a routerLink="/login">Log in</a></li>
+      <li><a routerLink="/more">News</a> | </li>
+      <li class="secondLevelUp" ><a routerLink="/login/login-form">Log in &nbsp;&nbsp;</a>
+        <ul class="secondLevel" >
+          <li><a routerLink="/login/signup-form">Sign up</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 </header>

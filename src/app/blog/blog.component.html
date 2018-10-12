@@ -2,7 +2,9 @@
   <app-menu></app-menu>
   <div class="glContainerPage teacherPage">
     <div class="glSheetArticle fontFamily">
-      <p>Lorem ipsum dolor sit amet, accusam nominavi vix ne. Pro cu apeirian recusabo,
+      <p>blog
+        <br>
+        Lorem ipsum dolor sit amet, accusam nominavi vix ne. Pro cu apeirian recusabo,
         vis no detracto maluisset. In quis omittam vulputate vel, vix quidam viderer sanctus te.
         Ei primis vidisse saperet vel, eam augue paulo choro no.
         Prompta quaestio per in, et utinam omittantur conclusionemque sea. Agam brute sit te.
@@ -19,6 +21,21 @@
         Mollis graecis efficiantur sea an, meliore deserunt id duo, mea cu alii minimum iracundia.
         Eam possim aliquip vituperata ea, prima veniam eu nam, graeco pertinacia incorrupte ius at.
       </p>
+    </div>
+    <div class="glSheetArticle fontFamily">
+      <form class="blogForm" [formGroup]="" method="POST">
+        <mat-form-field appearance="standard">
+          <mat-label>Title of this blog article.</mat-label>
+          <input matInput placeholder="Title">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>My blog text I write here</mat-label>
+          <textarea class="textBlogArticle" matInput placeholder="This history start..."></textarea>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="submit()" >Publish it</button>
+      </form>
     </div>
   </div>
 </section>

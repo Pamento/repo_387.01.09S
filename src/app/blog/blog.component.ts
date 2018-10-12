@@ -12,4 +12,7 @@ export class BlogComponent implements OnInit {
   ngOnInit() {
   }
 
+  submit() {
+    console.log('Ok');
+  }
 }
