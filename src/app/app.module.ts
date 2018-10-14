@@ -23,6 +23,8 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import { FormSignupComponent } from './form-signup/form-signup.component';
 
 import { ComparValidatorDirective } from './shered/compar-validator.directive';
+import { ExercisesComponent } from './exercises/exercises.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ComparValidatorDirective } from './shered/compar-validator.directive';
     MenuComponent,
     ComparValidatorDirective,
     FormLoginComponent,
-    FormSignupComponent
+    FormSignupComponent,
+    ExercisesComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

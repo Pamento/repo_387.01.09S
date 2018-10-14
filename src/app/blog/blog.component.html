@@ -1,6 +1,7 @@
 <section class="mainSection">
   <app-menu></app-menu>
   <div class="glContainerPage teacherPage">
+    <div class="container" >
     <div class="glSheetArticle fontFamily">
       <p>blog
         <br>
@@ -23,6 +24,7 @@
       </p>
     </div>
     <div class="glSheetArticle fontFamily">
+      <h2>New article ..</h2>
       <form class="blogForm" [formGroup]="" method="POST">
         <mat-form-field appearance="standard">
           <mat-label>Title of this blog article.</mat-label>
@@ -37,5 +39,6 @@
         <button mat-raised-button color="primary" (click)="submit()" >Publish it</button>
       </form>
     </div>
+  </div>
   </div>
 </section>

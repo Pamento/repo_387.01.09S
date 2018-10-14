@@ -1,5 +1,5 @@
 header {
-  height: 10%;
+  height: 6%;
   z-index: 10;
   padding: 0 10%;
   display: flex;
@@ -24,7 +24,11 @@ nav>ul>li>a, .secondLevel>li>a {
   font-weight: 100;
   font-family: "Goudy Bookletter 1911", sans-serif;
   text-decoration: none;
-  padding: 1em;
+  margin: 0.4em;
+  padding: 0.4em 0.6em 0;
+}
+nav>ul>li>a.active {
+  background-color: #f77670;
 }
 .secondLevel {
 	padding: 0;

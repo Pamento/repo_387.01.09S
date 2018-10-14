@@ -12,34 +12,35 @@
 } */
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-body {
-    /* background-color: #ff944d; */
-    position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 .glContainerPage {
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    scroll-behavior: smooth;
+  width: 100%;
+  height: 99%;
+  overflow: scroll;
+	scroll-behavior: smooth;
 }
 .glBodyPage {
-    overflow: scroll;
+  overflow: scroll;
 }
 .glSheetArticle {
-    width: 70%;
-    background-color: rgba(245, 245, 220, 0.7);
-    border-radius: 2px;
-    box-shadow: 3px 3px 4px #020202;
-    margin: 0 auto 2.5em;
-    padding: 2em;
+  width: 70%;
+  background-color: rgba(245, 245, 220, 0.7);
+  border-radius: 2px;
+  box-shadow: 3px 3px 4px #020202;
+  margin: 0 auto 2.5em;
+  padding: 2em;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+.glSheetArticle:first-child {
+	margin-top: 2.5em;
+}
+/* .glSheetArticle:last-child {
+  margin-bottom: 10%;
+} */
 .bgr-blck {
-    background-color: black;
+  background-color: black;
 }

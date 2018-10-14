@@ -12,4 +12,10 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToElement($element): void {
+    console.log($element);
+    // $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    const elmnt = document.getElementById($element);
+    elmnt.scrollIntoView({behavior: 'smooth'});
+  }
 }

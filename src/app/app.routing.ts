@@ -8,25 +8,31 @@ import { MoreComponent } from './more/more.component';
 import { LoginComponent } from './login/login.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormSignupComponent } from './form-signup/form-signup.component';
+import { ExercisesComponent } from './exercises/exercises.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 const routes: Routes = [
     // {path: '', pathMatch: 'full', redirectTo: 'first'}
     { path: '', component: HomeComponent },
     { path: 'aboutteacher', component: AboutTeacherComponent },
     { path: 'frenchCourses', component: CoursesComponent },
+    { path: 'exercises', component: ExercisesComponent },
+    { path: 'schedule', component: ScheduleComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'more', component: MoreComponent },
-    { path: 'login', component: LoginComponent,
+    {
+        path: 'login', component: LoginComponent,
         children: [
             { path: '', redirectTo: 'loginForm', pathMatch: 'full' },
             { path: 'login-form', component: FormLoginComponent },
             { path: 'signup-form', component: FormSignupComponent },
-        ] },
+        ]
+    },
     { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
     exports: [RouterModule],
 })
 export class AppRoutingModule { }
