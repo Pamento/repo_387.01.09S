@@ -43,5 +43,6 @@ nav>ul>li>a:hover, .secondLevel>li>a:hover {
 	text-decoration: underline;
 }
 .secondLevelUp:hover .secondLevel {
-	visibility: visible;
+  visibility: visible;
+  background-color: #f77670;
 }

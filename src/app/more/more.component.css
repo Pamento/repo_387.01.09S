@@ -21,3 +21,6 @@ background-image: url('/src/assets/images/fr.freeimages.com:photo:blue-texture-1
 .fontFamily {
   font-family: 'American Typewriter', serif;
 }
+.fontFamily:last-of-type {
+  margin-bottom: 7em;
+}

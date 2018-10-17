@@ -17,14 +17,6 @@ main {
   -webkit-transform: skewY(-10deg); /* Safari 3-8 */
   transform: skewY(-10deg);
 }
-.mainSlogan {
-  color: #ffffff;
-  font-family: 'Bradley Hand', cursive;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 99;
-}
 main>h1 {
   text-align: center;
 }
