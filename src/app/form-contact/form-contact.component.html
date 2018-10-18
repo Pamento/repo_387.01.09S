@@ -1,0 +1,25 @@
+<section class="contactFormBox">
+  <app-menu></app-menu>
+  <div class="signBox" >
+    <form class="signinForm" [formGroup]="formSignup" method="post">
+      <mat-form-field>
+        <input matInput type="text" placeholder="your name" formControlName="userName" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="email" placeholder="your@email.com" formControlName="email" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput type="email" placeholder="confirm your@email.com" formControlName="confirmEmail" >
+        </mat-form-field>
+      <!--
+      <mat-form-field>
+        <input matInput type="password" placeholder="password" formControlName="password" >
+      </mat-form-field>
+      -->
+      <mat-form-field>
+        <textarea matInput placeholder="Your message"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="submit()" >Send</button>
+    </form>
+  </div>
+</section>

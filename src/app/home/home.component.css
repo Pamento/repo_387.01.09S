@@ -36,9 +36,10 @@ footer {
 .footerUl>li {
   list-style-type: none;
 }
+.footerUl>li>a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .rightsParaf {
   font-size: 0.8em;
-}
-table {
-	font-weight: 100;
 }

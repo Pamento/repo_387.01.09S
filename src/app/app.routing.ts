@@ -10,11 +10,12 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import { FormSignupComponent } from './form-signup/form-signup.component';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 const routes: Routes = [
-  // {path: '', pathMatch: 'full', redirectTo: 'first'}
   { path: '', component: HomeComponent },
   { path: 'aboutteacher', component: AboutTeacherComponent },
+  { path: 'contact', component: FormContactComponent },
   { path: 'frenchCourses', component: CoursesComponent },
   { path: 'exercises', component: ExercisesComponent },
   { path: 'schedule', component: ScheduleComponent },

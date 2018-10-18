@@ -1,24 +1,24 @@
 <section class="mainSection">
-    <app-menu></app-menu>
-    <div class="glContainerPage teacherPage">
-      <div class="glSheetArticle fontFamily">
-
-      </div>
-      <div class="glSheetArticle fontFamily">
-        <h2>New article ..</h2>
-        <form class="blogForm" [formGroup]="" method="POST">
-          <mat-form-field appearance="standard">
-            <mat-label>Title of this blog article.</mat-label>
-            <input matInput placeholder="Title">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>My blog text I write here</mat-label>
-            <textarea class="textBlogArticle" matInput placeholder="This history start..."></textarea>
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          </mat-form-field>
-          <button mat-raised-button color="primary" (click)="submit()" >Publish it</button>
-        </form>
-      </div>
+  <app-menu></app-menu>
+  <div class="glContainerPage teacherPage">
+    <div class="glSheetArticle fontFamily">
+      <h1>To start learning ;)</h1>
     </div>
-  </section>
+    <div class="glSheetArticle fontFamily">
+      <h2></h2>
+      <form class="blogForm" [formGroup]="" method="POST">
+        <mat-form-field appearance="standard">
+          <mat-label>I love learn french.</mat-label>
+          <input matInput value="J'aime apprendre le français.">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Write here this sentence</mat-label>
+          <textarea class="textBlogArticle" matInput ></textarea>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="submit()" >Done</button>
+      </form>
+    </div>
+  </div>
+</section>

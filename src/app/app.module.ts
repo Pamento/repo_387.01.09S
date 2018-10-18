@@ -25,6 +25,7 @@ import { FormSignupComponent } from './form-signup/form-signup.component';
 import { ComparValidatorDirective } from './shered/compar-validator.directive';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FormLoginComponent,
     FormSignupComponent,
     ExercisesComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    FormContactComponent
   ],
   imports: [
     BrowserModule,

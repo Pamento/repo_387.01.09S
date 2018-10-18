@@ -10,8 +10,3 @@
   padding: 0;
   margin: 0;
 }
-.llContainerPage {
-  width: 100%;
-  overflow: scroll;
-  scroll-behavior: smooth;
-}

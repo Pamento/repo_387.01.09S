@@ -19,3 +19,10 @@ Some style come from global styleSheets file. styles.css like .sheetArticle clas
 .fontFamily {
     font-family: 'Bradley Hand', cursive;
 }
+.linkontact {
+    text-decoration: none;
+    color: #000000;
+}
+.linkontact:hover {
+    text-decoration: underline;
+}
