@@ -40,6 +40,11 @@ footer {
   text-decoration: none;
   color: #ffffff;
 }
+.footerUl>li>a>b {
+  padding: 0.6em 1em;
+  background-color: #f77670;
+  border-radius: 2em;
+}
 .rightsParaf {
   font-size: 0.8em;
 }

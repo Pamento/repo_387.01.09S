@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 .glContainerPage {
   width: 100%;
@@ -38,9 +39,6 @@ body {
 .glSheetArticle:first-child {
 	margin-top: 2.5em;
 }
-/* .glSheetArticle:last-child {
-  margin-bottom: 10%;
-} */
 .bgr-blck {
   background-color: black;
 }

@@ -1,22 +1,21 @@
 <section class="signBox" >
   <form class="signinForm" [formGroup]="formSignup" method="post">
       <mat-form-field>
-        <input matInput type="text" placeholder="your name" formControlName="userName" >
+        <input matInput type="text" placeholder="your name" formControlName="userName">
       </mat-form-field>
       <mat-form-field>
-        <input matInput type="email" placeholder="your@email.com" formControlName="email" >
+        <input matInput type="email" placeholder="your@email.com" formControlName="email">
       </mat-form-field>
-      <!--
       <mat-form-field>
-        <input matInput type="password" placeholder="password" formControlName="password" >
-      </mat-form-field>
-      -->
-      <mat-form-field>
-        <input matInput placeholder="password" [type]="hide ? 'text' : 'password'">
+        <input matInput placeholder="password" [type]="hide ? 'text' : 'password'" formControlName="password">
+        <mat-hint align="end">8 caracters minimum</mat-hint>
         <mat-icon class="orange600" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="confirm password" [type]="hide ? 'text' : 'password' ">
+        <input matInput placeholder="confirm password" [type]="hide ? 'text' : 'password'" formControlName="confirmPassword">
+        <mat-error *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)">
+          <span *ngIf="confirmPassword.errors['appCompare']">Passwords does not match</span>
+        </mat-error>
         <mat-icon class="orange600" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
       </mat-form-field>
     <button mat-raised-button color="primary" (click)="submit()" >Sign up</button>

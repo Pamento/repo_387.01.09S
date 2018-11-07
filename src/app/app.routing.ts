@@ -11,6 +11,7 @@ import { FormSignupComponent } from './form-signup/form-signup.component';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
+import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassword.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,13 +21,14 @@ const routes: Routes = [
   { path: 'exercises', component: ExercisesComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'more', component: MoreComponent },
+  { path: 'news', component: MoreComponent },
   {
       path: 'login', component: LoginComponent,
       children: [
           { path: '', redirectTo: 'loginForm', pathMatch: 'full' },
           { path: 'login-form', component: FormLoginComponent },
           { path: 'signup-form', component: FormSignupComponent },
+          { path: 'reset', component: FormResetpasswordComponent }
       ]
   },
   { path: '**', component: HomeComponent },

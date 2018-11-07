@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -10,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,11 +23,13 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormSignupComponent } from './form-signup/form-signup.component';
-
-import { ComparValidatorDirective } from './shered/compar-validator.directive';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
+
+import { ComparValidatorDirective } from './shered/compar-validator.directive';
+import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassword.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +46,8 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     FormSignupComponent,
     ExercisesComponent,
     ScheduleComponent,
-    FormContactComponent
+    FormContactComponent,
+    FormResetpasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,9 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     MatButtonModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

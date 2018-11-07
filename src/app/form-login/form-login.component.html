@@ -1,17 +1,13 @@
 <section class="logBox" >
   <form class="loginForm" [formGroup]="formLogin" method="post">
     <mat-form-field>
-      <input matInput type="email" placeholder="your@email.com" formControlName="email" required>
+      <input matInput type="email" placeholder="your@email.com" formControlName="email">
     </mat-form-field>
-    <!--
     <mat-form-field>
-      <input matInput type="password" placeholder="password" formControlName="password" >
-    </mat-form-field>
-    -->
-    <mat-form-field>
-      <input matInput placeholder="password" [type]="hide ? 'text' : 'password'" required>
+      <input matInput placeholder="password" [type]="hide ? 'text' : 'password'" formControlName="password">
       <mat-icon class="orange600" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
     </mat-form-field>
     <button mat-raised-button color="primary" (click)="submit()" >Login</button>
+    <span class="reset" ><a [routerLink]="['/login/reset']">Password help needed ?</a></span>
   </form>
 </section>
