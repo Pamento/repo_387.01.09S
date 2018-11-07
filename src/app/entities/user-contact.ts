@@ -1,5 +1,5 @@
 export class UserContact {
-  userName: String;
+  name: String;
   email: String;
   password: String;
   confirmEmail: String;

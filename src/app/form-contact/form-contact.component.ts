@@ -27,14 +27,14 @@ export class FormContactComponent implements OnInit {
   }
   createFormRegister(): any {
     return this.formContact = this.fb.group({
-      userName: [null, Validators.required],
+      name: [null, Validators.required],
       email: [null, Validators.compose([Validators.email, Validators.required])],
       message: [null, Validators.required],
       confirmEmail: [null, Validators.compose([Validators.email, Validators.required, CompareValidator('email')])]
     });
   }
-  get userName() {
-    return this.formContact.get('userName');
+  get name() {
+    return this.formContact.get('name');
   }
   get email() {
     return this.formContact.get('email');

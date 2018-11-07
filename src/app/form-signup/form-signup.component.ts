@@ -28,14 +28,14 @@ export class FormSignupComponent implements OnInit {
   }
   createFormRegister():any {
     return this.formSignup = this.fb.group({
-      userName: [ null, Validators.required ],
+      name: [ null, Validators.required ],
       email: [ null, Validators.compose([ Validators.email, Validators.required ])],
       password: [ null, Validators.compose([ Validators.minLength(8), Validators.required ])],
       confirmPassword: [ null, [ Validators.required, CompareValidator('password')] ]
     });
   }
-  get userName() {
-    return this.formSignup.get('userName');
+  get name() {
+    return this.formSignup.get('name');
   }
   get email() {
     return this.formSignup.get('email');
