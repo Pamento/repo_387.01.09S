@@ -1,1 +1,1 @@
-Application for comunication.
+Application platform for comunication.
