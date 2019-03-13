@@ -48,7 +48,6 @@ export class FormContactComponent implements OnInit {
   submit(): any {
     if (this.formContact.valid) {
       const userMessage: UserContact = Object.assign({}, this.formContact.value);
-      console.log(userMessage);
       delete userMessage.confirmEmail;
       this.dataBase.email(userMessage);
       this.formContact.reset();

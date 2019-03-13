@@ -1,14 +1,14 @@
-<section class="contactFormBox">
+<section class="contactFormBox" role="region">
   <app-menu></app-menu>
   <div class="signBox" >
-    <form class="signinForm" [formGroup]="formContact" method="post">
+    <form class="signinForm" [formGroup]="formContact" method="post" role="form">
       <mat-form-field>
         <input matInput type="text" placeholder="your name" formControlName="name" >
       </mat-form-field>
       <mat-form-field>
         <input matInput type="email" placeholder="your@email.com" formControlName="email" >
         <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
-          Email form is not valid
+          Please, entry an valid e-mail adress.
         </mat-error>
       </mat-form-field>
       <mat-form-field>

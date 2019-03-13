@@ -2,7 +2,7 @@
 Some style come from global styleSheets file. styles.css like .sheetArticle class.
 */
 .mainSection {
-    background-image: url('/src/assets/images/Cooking-session-with-Gr-5.jpg');
+    background-image: url('/assets/images/Cooking-session-with-Gr-5.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -15,6 +15,9 @@ Some style come from global styleSheets file. styles.css like .sheetArticle clas
 .linkontact {
     text-decoration: none;
     color: #000000;
+    padding: 0.6em 1em;
+    background-color: #f77670;
+    border-radius: 2em;
 }
 .linkontact:hover {
     text-decoration: underline;

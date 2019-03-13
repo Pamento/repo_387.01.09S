@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { DataService } from '../services/data.service';
 import { UserRegistration } from '../entities/user-registration';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-login',
@@ -14,7 +15,8 @@ export class FormLoginComponent implements OnInit {
   hide: any;
   constructor(
     private fb: FormBuilder,
-    private dbService: DataService
+    private dbService: DataService,
+    private Routes: Router
   ) { }
 
   ngOnInit() {
@@ -39,11 +41,12 @@ export class FormLoginComponent implements OnInit {
       const logApprentice: UserRegistration = Object.assign({}, this.formLogin.value);
       this.dbService.login(logApprentice)
       .subscribe(
-        data => { 
+        (data: any ) => { 
           this.dbService.resLoginData = data,
-          localStorage.setItem('token', JSON.stringify(data._id));
+          localStorage.setItem('token', JSON.stringify(data.id));
         }
       )
     }
+    this.Routes.navigate(['/']);
   }
 }

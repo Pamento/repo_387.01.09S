@@ -3,5 +3,5 @@ export class UserRegistration {
   email: String;
   password: String;
   confirmPassword: String;
-  _id: string;
+  _id?: string;
 }

@@ -1,10 +1,10 @@
-<section class="logBox" >
-  <form class="loginForm" [formGroup]="formLogin" method="post">
+<section class="logBox" role="region">
+  <form class="loginForm" [formGroup]="formLogin" method="post" role="form">
     <mat-form-field>
-      <input matInput type="email" placeholder="your@email.com" formControlName="email">
+      <input matInput type="email" placeholder="login your@email.com" formControlName="email">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="password" [type]="hide ? 'text' : 'password'" formControlName="password">
+      <input matInput placeholder="login password" [type]="hide ? 'text' : 'password'" formControlName="password">
       <mat-icon class="orange600" matSuffix (click)="hide = !hide">{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
     </mat-form-field>
     <button mat-raised-button color="primary" (click)="submit()" >Login</button>

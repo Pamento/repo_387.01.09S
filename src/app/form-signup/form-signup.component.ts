@@ -50,9 +50,7 @@ export class FormSignupComponent implements OnInit {
     if (this.formSignup.valid) {
       const newApprentice: UserRegistration = Object.assign({}, this.formSignup.value );
       delete newApprentice.confirmPassword;
-      console.log(newApprentice);
       this.dataBase.addUser(newApprentice).subscribe(
-        (data) => { console.log('data from addUser ',data)},
         (error) => { console.log('!!! Error from addUser ',error)}
       );
       this.formSignup.reset();

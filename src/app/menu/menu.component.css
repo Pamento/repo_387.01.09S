@@ -25,6 +25,9 @@ nav>ul>li>a, .secondLevel>li>a {
   margin: 0.4em;
   padding: 0.2em 0.6em;
 }
+.secondLevel>li>a {
+  color: #404040;
+}
 nav>ul>li>a.active {
   background-color: #f77670;
 }
@@ -38,10 +41,16 @@ nav>ul>li>a.active {
 .secondLevel>li {
 	padding-top: .5em;
 }
-nav>ul>li>a:hover, .secondLevel>li>a:hover {
-	text-decoration: underline;
-}
 .secondLevelUp:hover .secondLevel {
   visibility: visible;
   background-color: #f77670;
+}
+nav>ul>li>a:hover,
+.secondLevel>li>a:hover {
+  color: #000000;
+	text-decoration: underline;
+}
+.forOnePage:hover .onePage {
+  color: #000000;
+  text-decoration: underline;
 }

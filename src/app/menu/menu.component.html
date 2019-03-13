@@ -1,19 +1,21 @@
-<header>
-  <nav>
+<header role="banner">
+  <nav role="navigation" aria-label="Main navigation">
     <ul>
       <li><a routerLink="/" routerLinkActive="active">Home</a> | </li>
       <li><a routerLink="/aboutteacher" routerLinkActive="active">About teacher</a> | </li>
-      <li class="secondLevelUp" routerLinkActive="active"><a routerLink="/frenchCourses">French courses</a> |
-        <ul class="secondLevel" >
-          <li><a routerLink="/frenchCourses" >How ts's works</a></li>
-          <li><a routerLink="/frenchCourses" >Fees</a></li>
-          <li><a routerLink="/frenchCourses" >Term & Conditions</a></li>
+      <li class="secondLevelUp"><a routerLink="/frenchCourses" routerLinkActive="active">French courses</a> |
+        <ul class="secondLevel forOnePage" >
+          <li><a class="onePage" routerLink="/frenchCourses" >How it's works</a></li>
+          <li><a class="onePage" routerLink="/frenchCourses" >Fees</a></li>
+          <li><a class="onePage" routerLink="/frenchCourses" >Term & Conditions</a></li>
           <li><a routerLink="/exercises">Exercises</a></li>
         </ul>
       </li>
-      <li><a routerLink="/blog" routerLinkActive="active">Blog</a> | </li>
+      <li><a routerLink="/articles" routerLinkActive="active">Articles</a> | </li>
       <li><a routerLink="/news" routerLinkActive="active">News</a> | </li>
-      <li class="secondLevelUp"><a routerLink="/login/login-form" routerLinkActive="active">Log in &nbsp;&nbsp;</a>
+      <li class="secondLevelUp">
+        <a *ngIf="!isLoggedIn" routerLink="/login/login-form" routerLinkActive="active">Log in &nbsp;&nbsp;</a>
+        <a *ngIf="isLoggedIn" routerLink="" routerLinkActive="active" (click)="logout()" >Log out &nbsp;&nbsp;</a>
         <ul class="secondLevel" >
           <li><a routerLink="/login/signup-form">Sign up</a></li>
         </ul>

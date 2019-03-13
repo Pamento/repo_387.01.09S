@@ -1,14 +1,14 @@
 .homeBody {
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/images/cool-bacgr.png');
+  background-image: url('/assets/images/cool-bacgr.png');
   background-position: center;
   background-size: cover;
 }
 main {
   width: 80%;
   height: 60%;
-  background-image: url('/src/assets/images/d14e2f47ca30c6a5c886f7ad32cfe1ed.png');
+  background-image: url('/assets/images/d14e2f47ca30c6a5c886f7ad32cfe1ed.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

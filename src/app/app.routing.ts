@@ -12,33 +12,34 @@ import { ExercisesComponent } from './exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
 import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassword.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'aboutteacher', component: AboutTeacherComponent },
   { path: 'contact', component: FormContactComponent },
   { path: 'frenchCourses', component: CoursesComponent },
-  { path: 'exercises', component: ExercisesComponent },
+  { path: 'exercises', component: ExercisesComponent, canActivate: [AuthGuard] },
   { path: 'schedule', component: ScheduleComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'articles', component: BlogComponent },
   { path: 'news', component: MoreComponent },
   {
-      path: 'login', component: LoginComponent,
-      children: [
-          { path: '', redirectTo: 'loginForm', pathMatch: 'full' },
-          { path: 'login-form', component: FormLoginComponent },
-          { path: 'signup-form', component: FormSignupComponent },
-          { path: 'reset', component: FormResetpasswordComponent }
-      ]
+    path: 'login', component: LoginComponent,
+    children: [
+      { path: '', redirectTo: 'loginForm', pathMatch: 'full' },
+      { path: 'login-form', component: FormLoginComponent },
+      { path: 'signup-form', component: FormSignupComponent },
+      { path: 'reset', component: FormResetpasswordComponent }
+    ]
   },
   { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { 
-			anchorScrolling: 'enabled',
-			scrollPositionRestoration: 'enabled'
-		 })],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
+  })],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }

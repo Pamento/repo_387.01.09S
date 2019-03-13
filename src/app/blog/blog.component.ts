@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  isLoggedIn: Boolean;
 
+  constructor(private auth: AuthService) { }
+
+  /*
+   * ngOnInit() use atuhService for allowed or denny access to
+   * articles editor
+   */
   ngOnInit() {
+    if (this.auth.isLoggedIn()) {
+      this.isLoggedIn = true;
+    }
+    else {
+      this.isLoggedIn = false;
+    }
   }
 
   submit() {

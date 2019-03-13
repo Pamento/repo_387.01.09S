@@ -29,6 +29,9 @@ import { FormContactComponent } from './form-contact/form-contact.component';
 
 import { ComparValidatorDirective } from './shered/compar-validator.directive';
 import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassword.component';
+import { AuthService } from './services/auth.service';
+import { DataService } from './services/data.service';
+import { AuthGuard } from './auth/auth.guard';
 
 
 @NgModule({
@@ -63,7 +66,7 @@ import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassw
     MatTabsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DataService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
