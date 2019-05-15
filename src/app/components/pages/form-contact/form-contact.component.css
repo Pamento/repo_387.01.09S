@@ -1,0 +1,26 @@
+.contactFormBox {
+  background-image: url('/assets/images/home.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.signBox {
+  background-color: rgb(242, 239, 239);
+  box-shadow: 4px 4px 6px;
+  width: 40%;
+  padding: 2.5em;
+  margin: 3.5em auto;
+}
+.signinForm {
+  display: flex;
+  flex-direction: column;
+}
+.signinForm > * {
+  width: 100%;
+}
+.coverBody {
+  background-color: rgba(0, 0, 51, 0.8);
+  /* background-color: rgba(0, 0, 102, 0.8); */
+  height: 100%;
+}

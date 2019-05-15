@@ -14,31 +14,30 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutTeacherComponent } from './about-teacher/about-teacher.component';
-import { CoursesComponent } from './courses/courses.component';
-import { BlogComponent } from './blog/blog.component';
-import { MoreComponent } from './more/more.component';
-import { LoginComponent } from './login/login.component';
-import { MenuComponent } from './menu/menu.component';
-import { FormLoginComponent } from './form-login/form-login.component';
-import { FormSignupComponent } from './form-signup/form-signup.component';
-import { ExercisesComponent } from './exercises/exercises.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { CoursesComponent } from './components/pages/courses/courses.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
+import { MoreComponent } from './components/pages/more/more.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { MenuComponent } from './components/partials/menu/menu.component';
+import { FormLoginComponent } from './components/partials/form-login/form-login.component';
+import { FormSignupComponent } from './components/partials/form-signup/form-signup.component';
+import { ExercisesComponent } from './components/pages/exercises/exercises.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { FormContactComponent } from './form-contact/form-contact.component';
+import { FormContactComponent } from './components/pages/form-contact/form-contact.component';
 
 import { ComparValidatorDirective } from './shered/compar-validator.directive';
-import { FormResetpasswordComponent } from './form-resetpassword/form-resetpassword.component';
+import { FormResetpasswordComponent } from './components/partials/form-resetpassword/form-resetpassword.component';
 import { AuthService } from './services/auth.service';
 import { DataService } from './services/data.service';
 import { AuthGuard } from './auth/auth.guard';
+import { HomeFooterComponent } from './components/partials/home-footer/home-footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutTeacherComponent,
     CoursesComponent,
     BlogComponent,
     MoreComponent,
@@ -50,7 +49,8 @@ import { AuthGuard } from './auth/auth.guard';
     ExercisesComponent,
     ScheduleComponent,
     FormContactComponent,
-    FormResetpasswordComponent
+    FormResetpasswordComponent,
+    HomeFooterComponent
   ],
   imports: [
     BrowserModule,

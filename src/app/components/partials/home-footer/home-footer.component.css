@@ -1,0 +1,31 @@
+footer {
+	color: #cccccc;
+	font-weight: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footerUl {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.footerUl>li {
+  list-style-type: none;
+}
+.footerUl>li>a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footerUl>li>a>b {
+  padding: 0.6em 1em;
+  /* background-color: #f77670; */
+  border: 1px solid #ffffff;
+  border-radius: 2em;
+}
+.rightsParaf {
+  font-size: 0.8em;
+}
+.rightsParaf span {
+  margin: 0 1em;
+}

@@ -1,0 +1,17 @@
+/*
+Some style come from global styleSheets file. styles.css like .sheetArticle class.
+*/
+.mainSection {
+  background-image: url('/assets/images/Cooking-session-with-Gr-5.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.fontFamily {
+  font-family: 'American Typewriter', serif;
+}
+.fontFamily:last-of-type {
+  margin-bottom: 7em;
+}
